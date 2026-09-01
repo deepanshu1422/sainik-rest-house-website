@@ -2,26 +2,28 @@
 <html lang="hi-en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#7a1f2b" />
 <title>Sainik Rest House Paonta Sahib | Sasta Aur Best Hotel Near Court Road | AC Rooms + Dormitory</title>
 <meta name="description" content="Sainik Rest House, Paonta Sahib mein sabse best budget hotel — Court Road, SDM Office ke paas. 3 AC double rooms aur 10-bed dormitory. Sainik parivaar ko priority, civilians bhi welcome. In-house restaurant Courtyard Café. Book karo Booking.com ya Airbnb se." />
 <meta name="keywords" content="sainik rest house paonta sahib, hotel in paonta sahib, army guest house paonta sahib, sasta hotel paonta sahib, budget hotel paonta sahib, dormitory paonta sahib, court road paonta sahib hotel, sirmour hotel, guest house near court paonta sahib, paonta sahib mein rukne ki jagah, ac room paonta sahib" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://sainikresthouse.vercel.app/" />
+<link rel="canonical" href="https://deepanshu1422.github.io/sainik-rest-house-website/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A8%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Sainik Rest House Paonta Sahib | Best Budget Hotel Court Road" />
 <meta property="og:description" content="Paonta Sahib mein rukne ke liye best jagah — 3 AC rooms + 10-bed dormitory, Court Road pe, SDM Office ke paas. Sainik parivaar ko priority, sab welcome." />
-<meta property="og:image" content="https://sainikresthouse.vercel.app/images/outside-front_ed8b6f.jpg" />
-<meta property="og:url" content="https://sainikresthouse.vercel.app/" />
+<meta property="og:image" content="https://deepanshu1422.github.io/sainik-rest-house-website/images/outside-front_ed8b6f.jpg" />
+<meta property="og:url" content="https://deepanshu1422.github.io/sainik-rest-house-website/" />
 <meta property="og:locale" content="en_IN" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sainik Rest House Paonta Sahib" />
 <meta name="twitter:description" content="Budget AC rooms aur dormitory, Court Road Paonta Sahib pe. Book now." />
-<meta name="twitter:image" content="https://sainikresthouse.vercel.app/images/outside-front_ed8b6f.jpg" />
+<meta name="twitter:image" content="https://deepanshu1422.github.io/sainik-rest-house-website/images/outside-front_ed8b6f.jpg" />
 
 <!-- JSON-LD Hotel Schema -->
 <script type="application/ld+json">
@@ -32,9 +34,9 @@
   "alternateName": "Courtyard Café @ Sainik Vishram Grih",
   "description": "Budget hotel with 3 AC double rooms and a 10-bed dormitory in Paonta Sahib, Himachal Pradesh. Priority for defence personnel, open to civilians too.",
   "image": [
-    "https://sainikresthouse.vercel.app/images/outside-front_ed8b6f.jpg",
-    "https://sainikresthouse.vercel.app/images/room1_953659.jpg",
-    "https://sainikresthouse.vercel.app/images/food-2_98a6cb.jpg"
+    "https://deepanshu1422.github.io/sainik-rest-house-website/images/outside-front_ed8b6f.jpg",
+    "https://deepanshu1422.github.io/sainik-rest-house-website/images/room1_953659.jpg",
+    "https://deepanshu1422.github.io/sainik-rest-house-website/images/food-2_98a6cb.jpg"
   ],
   "address": {
     "@type": "PostalAddress",
@@ -60,143 +62,198 @@
 <style>
   :root {
     --maroon: #7a1f2b;
+    --maroon-dark: #5c1620;
     --gold: #c9a227;
+    --gold-light: #e0bb45;
     --cream: #faf6ee;
     --dark: #241512;
     --green: #1e5631;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
+    font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
     background: var(--cream);
     color: var(--dark);
     line-height: 1.6;
+    overflow-x: hidden;
   }
   a { text-decoration: none; color: inherit; }
   img { max-width: 100%; display: block; }
+  button { font: inherit; cursor: pointer; border: none; background: none; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 6vw; }
 
   /* Header */
   header {
-    background: linear-gradient(120deg, var(--maroon), #5c1620);
+    background: linear-gradient(120deg, var(--maroon), var(--maroon-dark));
     color: #fff;
-    padding: 14px 6vw;
+    padding: 14px 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 200;
     box-shadow: 0 2px 12px rgba(0,0,0,0.25);
   }
-  header .logo { font-weight: 700; font-size: 1.3rem; display: flex; align-items: center; gap: 8px; }
-  header .logo span.badge { background: var(--gold); color: var(--dark); font-size: 0.65rem; padding: 2px 8px; border-radius: 20px; font-weight: 700; }
-  header nav a { color: #fff; margin-left: 22px; font-weight: 500; font-size: 0.95rem; }
-  header nav a:hover { color: var(--gold); }
-  .header-cta { background: var(--gold); color: var(--dark); padding: 8px 16px; border-radius: 6px; font-weight: 700; }
+  header .logo { font-weight: 700; font-size: 1.15rem; display: flex; align-items: center; gap: 8px; }
+  header .logo span.badge { background: var(--gold); color: var(--dark); font-size: 0.62rem; padding: 2px 8px; border-radius: 20px; font-weight: 700; white-space: nowrap; }
+  header nav { display: flex; align-items: center; }
+  header nav a.nav-link { color: #fff; margin-left: 22px; font-weight: 500; font-size: 0.95rem; }
+  header nav a.nav-link:hover { color: var(--gold); }
+  .header-cta { background: var(--gold); color: var(--dark); padding: 8px 16px; border-radius: 6px; font-weight: 700; margin-left: 22px; }
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px; padding: 6px; z-index: 210;
+  }
+  .hamburger span { width: 24px; height: 2.5px; background: #fff; border-radius: 2px; transition: 0.3s; }
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 860px) {
+    header nav.desktop-nav { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu {
+      position: fixed; top: 0; right: 0; height: 100vh; width: 78vw; max-width: 320px;
+      background: var(--maroon-dark); z-index: 205; transform: translateX(100%); transition: transform 0.3s ease;
+      padding: 90px 30px 30px; display: flex; flex-direction: column; gap: 22px; box-shadow: -8px 0 30px rgba(0,0,0,0.3);
+    }
+    .mobile-menu.open { transform: translateX(0); display: flex; }
+    .mobile-menu a { color: #fff; font-size: 1.1rem; font-weight: 600; }
+    .mobile-menu .header-cta { margin-left: 0; text-align: center; }
+    .menu-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 202; }
+    .menu-overlay.open { display: block; }
+  }
 
   /* Hero */
   .hero {
     position: relative;
+    min-height: 640px;
     height: 92vh;
-    min-height: 520px;
-    background: url('/images/outside-front_ed8b6f.jpg') center/cover no-repeat;
+    display: flex;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0;
+  }
+  .hero-bg img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center;
   }
   .hero::after {
     content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(20,10,8,0.75));
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(20,10,8,0.45), rgba(20,10,8,0.82));
   }
   .hero-content {
     position: relative; z-index: 2;
-    height: 100%;
-    display: flex; flex-direction: column; justify-content: center;
+    align-self: center;
     padding: 0 6vw;
     color: #fff;
     max-width: 800px;
   }
   .hero-content .eyebrow {
-    color: var(--gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 14px;
+    color: var(--gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 14px;
   }
-  .hero-content h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; margin-bottom: 18px; }
-  .hero-content p { font-size: 1.15rem; opacity: 0.92; max-width: 620px; margin-bottom: 28px; }
+  .hero-content h1 { font-size: clamp(1.9rem, 5.5vw, 3.4rem); font-weight: 800; line-height: 1.15; margin-bottom: 18px; }
+  .hero-content p { font-size: clamp(0.95rem, 2vw, 1.15rem); opacity: 0.92; max-width: 620px; margin-bottom: 28px; }
   .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
   .btn {
     display: inline-block; padding: 14px 26px; border-radius: 8px; font-weight: 700; font-size: 1rem;
     transition: transform 0.15s ease;
   }
-  .btn:hover { transform: translateY(-2px); }
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); }
   .btn-primary { background: var(--gold); color: var(--dark); }
   .btn-secondary { background: rgba(255,255,255,0.12); color: #fff; border: 1.5px solid rgba(255,255,255,0.6); }
 
-  section { padding: 70px 6vw; max-width: 1200px; margin: 0 auto; }
+  section { padding: 64px 6vw; max-width: 1200px; margin: 0 auto; }
   .section-tag { color: var(--maroon); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem; margin-bottom: 10px; }
-  h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 800; margin-bottom: 16px; color: var(--dark); }
-  .lead { font-size: 1.05rem; color: #4a3c38; max-width: 720px; margin-bottom: 40px; }
+  h2 { font-size: clamp(1.5rem, 4vw, 2.3rem); font-weight: 800; margin-bottom: 16px; color: var(--dark); }
+  .lead { font-size: clamp(0.95rem, 1.6vw, 1.05rem); color: #4a3c38; max-width: 720px; margin-bottom: 40px; }
 
   /* Why us grid */
-  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
-  .why-card { background: #fff; padding: 26px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid var(--gold); }
-  .why-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
-  .why-card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--maroon); }
-  .why-card p { font-size: 0.92rem; color: #5a4c47; }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+  .why-card { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid var(--gold); }
+  .why-card .icon { font-size: 1.7rem; margin-bottom: 10px; }
+  .why-card h3 { font-size: 1.02rem; margin-bottom: 8px; color: var(--maroon); }
+  .why-card p { font-size: 0.9rem; color: #5a4c47; }
 
   /* Rooms */
-  .rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+  .rooms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
   .room-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
-  .room-card .img-wrap { height: 220px; overflow: hidden; }
+  .room-card .img-wrap { aspect-ratio: 4/3; overflow: hidden; background: #eee; }
   .room-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
   .room-card:hover img { transform: scale(1.08); }
-  .room-card .body { padding: 22px; }
-  .room-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
-  .room-card .price { color: var(--maroon); font-weight: 800; font-size: 1.3rem; margin: 10px 0; }
-  .room-card .price small { font-size: 0.85rem; font-weight: 500; color: #777; }
+  .room-card .body { padding: 20px; }
+  .room-card h3 { font-size: 1.15rem; margin-bottom: 6px; }
+  .room-card .price { color: var(--maroon); font-weight: 800; font-size: 1.25rem; margin: 10px 0; }
+  .room-card .price small { font-size: 0.82rem; font-weight: 500; color: #777; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
-  .tag { background: #f2e9d8; color: var(--maroon); font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+  .tag { background: #f2e9d8; color: var(--maroon); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
 
   /* Gallery */
-  .gallery-grid { column-count: 3; column-gap: 14px; }
-  .gallery-grid img { width: 100%; margin-bottom: 14px; border-radius: 10px; break-inside: avoid; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
-  @media (max-width: 720px) { .gallery-grid { column-count: 2; } }
+  .gallery-grid { column-count: 3; column-gap: 12px; }
+  .gallery-grid figure { break-inside: avoid; margin-bottom: 12px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08); cursor: zoom-in; position: relative; }
+  .gallery-grid img { width: 100%; display: block; transition: transform 0.3s ease; }
+  .gallery-grid figure:hover img { transform: scale(1.05); }
+  @media (max-width: 720px) { .gallery-grid { column-count: 2; column-gap: 8px; } .gallery-grid figure { margin-bottom: 8px; } }
+
+  /* Lightbox */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 500; background: rgba(10,5,4,0.94);
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 86vh; border-radius: 8px; box-shadow: 0 10px 50px rgba(0,0,0,0.6); }
+  .lightbox-close { position: absolute; top: 18px; right: 24px; color: #fff; font-size: 2rem; background: none; line-height: 1; }
+  .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 2.2rem; padding: 10px 16px; opacity: 0.75; }
+  .lightbox-nav:hover { opacity: 1; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
 
   /* Location */
   .location-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-  .location-wrap iframe { width: 100%; height: 340px; border: 0; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
-  .loc-details p { margin-bottom: 10px; font-size: 1rem; }
+  .location-wrap iframe { width: 100%; height: 320px; border: 0; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
+  .loc-details p { margin-bottom: 10px; font-size: 0.98rem; }
   .loc-details strong { color: var(--maroon); }
   @media (max-width: 800px) { .location-wrap { grid-template-columns: 1fr; } }
 
   /* Booking band */
   .booking-band {
     background: linear-gradient(120deg, var(--dark), #35201c);
-    color: #fff; text-align: center; padding: 70px 6vw;
+    color: #fff; text-align: center; padding: 64px 6vw;
   }
   .booking-band h2 { color: #fff; }
   .booking-band p { color: #d8c9c2; max-width: 600px; margin: 0 auto 30px; }
   .platform-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
   .platform-card {
-    background: #fff; color: var(--dark); padding: 20px 30px; border-radius: 12px; min-width: 220px;
+    background: #fff; color: var(--dark); padding: 20px 30px; border-radius: 12px; min-width: 200px;
     font-weight: 700; transition: transform 0.15s ease;
   }
   .platform-card:hover { transform: translateY(-4px); }
-  .platform-card .platform-name { font-size: 1.15rem; margin-bottom: 4px; }
-  .platform-card .platform-sub { font-size: 0.82rem; font-weight: 500; color: #777; }
+  .platform-card .platform-name { font-size: 1.1rem; margin-bottom: 4px; }
+  .platform-card .platform-sub { font-size: 0.8rem; font-weight: 500; color: #777; }
   .platform-card.booking { border-bottom: 5px solid #003580; }
   .platform-card.airbnb { border-bottom: 5px solid #FF385C; }
 
   /* FAQ */
   .faq-item { border-bottom: 1px solid #e5d9cd; padding: 18px 0; }
-  .faq-item h3 { font-size: 1.02rem; color: var(--maroon); margin-bottom: 6px; }
-  .faq-item p { font-size: 0.95rem; color: #5a4c47; }
+  .faq-item h3 { font-size: 1rem; color: var(--maroon); margin-bottom: 6px; }
+  .faq-item p { font-size: 0.92rem; color: #5a4c47; }
 
   footer {
-    background: var(--dark); color: #cbb; padding: 40px 6vw; text-align: center; font-size: 0.85rem;
+    background: var(--dark); color: #cbb; padding: 36px 6vw; text-align: center; font-size: 0.85rem;
   }
   footer a { color: var(--gold); }
 
   .whatsapp-float {
-    position: fixed; bottom: 24px; right: 24px; z-index: 200;
-    background: #25D366; color: #fff; padding: 14px 20px; border-radius: 50px;
+    position: fixed; bottom: 20px; right: 20px; z-index: 150;
+    background: #25D366; color: #fff; padding: 13px 18px; border-radius: 50px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3); font-weight: 700; display: flex; align-items: center; gap: 8px;
+    font-size: 0.92rem;
+  }
+  @media (max-width: 500px) {
+    .whatsapp-float { padding: 12px 14px; font-size: 0.85rem; }
+    section { padding: 48px 6vw; }
+    .hero { min-height: 560px; }
   }
 </style>
 </head>
@@ -204,15 +261,29 @@
 
 <header>
   <div class="logo">🏨 Sainik Rest House <span class="badge">Paonta Sahib</span></div>
-  <nav>
-    <a href="#rooms">Rooms</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#location">Location</a>
+  <nav class="desktop-nav">
+    <a class="nav-link" href="#rooms">Rooms</a>
+    <a class="nav-link" href="#gallery">Gallery</a>
+    <a class="nav-link" href="#location">Location</a>
     <a href="#book" class="header-cta">Book Now</a>
   </nav>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#rooms">Rooms</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#location">Location</a>
+  <a href="#book" class="header-cta">Book Now</a>
+</nav>
+
 <section class="hero">
+  <div class="hero-bg">
+    <img src="images/outside-front_ed8b6f.jpg" alt="Sainik Rest House front view, Paonta Sahib" loading="eager" fetchpriority="high">
+  </div>
   <div class="hero-content">
     <div class="eyebrow">Court Road · Paonta Sahib · Himachal Pradesh</div>
     <h1>Paonta Sahib Mein Rukne Ki Best Aur Sasti Jagah</h1>
@@ -268,7 +339,7 @@
   <p class="lead">Har budget ke liye option — chahe aap family ke saath ho ya solo travel kar rahe ho.</p>
   <div class="rooms-grid">
     <div class="room-card">
-      <div class="img-wrap"><img src="/images/room1_953659.jpg" alt="AC Double Room Sainik Rest House Paonta Sahib" loading="lazy"></div>
+      <div class="img-wrap"><img src="images/room1_953659.jpg" alt="AC Double Room Sainik Rest House Paonta Sahib" loading="lazy" width="600" height="450"></div>
       <div class="body">
         <h3>AC Double Room</h3>
         <div class="tags">
@@ -278,11 +349,11 @@
           <span class="tag">2 Guests</span>
         </div>
         <div class="price">₹1,500 - ₹1,800 <small>/ night</small></div>
-        <p style="font-size:0.9rem;color:#5a4c47">Spacious double bed room, wardrobe, fresh linen aur towels ke saath. 3 rooms available.</p>
+        <p style="font-size:0.88rem;color:#5a4c47">Spacious double bed room, wardrobe, fresh linen aur towels ke saath. 3 rooms available.</p>
       </div>
     </div>
     <div class="room-card">
-      <div class="img-wrap"><img src="/images/room-2_b7430d.jpg" alt="Premium AC Room Sainik Rest House" loading="lazy"></div>
+      <div class="img-wrap"><img src="images/room-2_b7430d.jpg" alt="Premium AC Room Sainik Rest House" loading="lazy" width="600" height="450"></div>
       <div class="body">
         <h3>Premium AC Room</h3>
         <div class="tags">
@@ -292,11 +363,11 @@
           <span class="tag">Wardrobe</span>
         </div>
         <div class="price">₹1,500 - ₹1,800 <small>/ night</small></div>
-        <p style="font-size:0.9rem;color:#5a4c47">Stylish decor, comfortable seating aur sab modern amenities ke saath.</p>
+        <p style="font-size:0.88rem;color:#5a4c47">Stylish decor, comfortable seating aur sab modern amenities ke saath.</p>
       </div>
     </div>
     <div class="room-card">
-      <div class="img-wrap"><img src="/images/room-3_32953c.jpg" alt="Dormitory Bed Sainik Rest House Paonta Sahib" loading="lazy"></div>
+      <div class="img-wrap"><img src="images/room-3_32953c.jpg" alt="Dormitory Bed Sainik Rest House Paonta Sahib" loading="lazy" width="600" height="450"></div>
       <div class="body">
         <h3>Bed in Dormitory</h3>
         <div class="tags">
@@ -305,7 +376,7 @@
           <span class="tag">Budget-Friendly</span>
         </div>
         <div class="price">₹500 <small>/ bed / night</small></div>
-        <p style="font-size:0.9rem;color:#5a4c47">Perfect for solo travellers, backpackers aur groups — safe aur super affordable stay.</p>
+        <p style="font-size:0.88rem;color:#5a4c47">Perfect for solo travellers, backpackers aur groups — safe aur super affordable stay.</p>
       </div>
     </div>
   </div>
@@ -314,27 +385,37 @@
 <section id="gallery">
   <div class="section-tag">Photo Gallery</div>
   <h2>Ek Jhalak Hamare Rest House Ki</h2>
-  <div class="gallery-grid">
-    <img src="/images/outside_284be7.jpg" alt="Sainik Rest House exterior Paonta Sahib" loading="lazy">
-    <img src="/images/food-2_98a6cb.jpg" alt="Courtyard Cafe restaurant seating" loading="lazy">
-    <img src="/images/room1-2_4dd94f.jpg" alt="AC double room interior" loading="lazy">
-    <img src="/images/food-4_ce7a64.jpg" alt="Restaurant dining area" loading="lazy">
-    <img src="/images/room-2-2_9f0a8f.jpg" alt="Premium room wallpaper decor" loading="lazy">
-    <img src="/images/food-3_42d382.jpg" alt="Cafe interior wall art" loading="lazy">
-    <img src="/images/room-3-2_15660e.jpg" alt="Dormitory room bed" loading="lazy">
-    <img src="/images/food-5_13e237.jpg" alt="Reception and cafe front desk" loading="lazy">
-    <img src="/images/hideout-start_a9facb.jpg" alt="Hide Out restaurant dining hall" loading="lazy">
-    <img src="/images/ouside-2_eb1739.jpg" alt="Courtyard Cafe signboard Paonta Sahib" loading="lazy">
-    <img src="/images/outside-front_ed8b6f.jpg" alt="Sainik Vishram Grih front view" loading="lazy">
-    <img src="/images/food-area-hideout_92d184.jpg" alt="Long dining table dormitory dining area" loading="lazy">
+  <div class="gallery-grid" id="galleryGrid">
+    <figure><img src="images/outside_284be7.jpg" alt="Sainik Rest House exterior Paonta Sahib" loading="lazy"></figure>
+    <figure><img src="images/food-2_98a6cb.jpg" alt="Courtyard Cafe restaurant seating" loading="lazy"></figure>
+    <figure><img src="images/room1-2_4dd94f.jpg" alt="AC double room interior" loading="lazy"></figure>
+    <figure><img src="images/food-4_ce7a64.jpg" alt="Restaurant dining area" loading="lazy"></figure>
+    <figure><img src="images/room-2-2_9f0a8f.jpg" alt="Premium room wallpaper decor" loading="lazy"></figure>
+    <figure><img src="images/food-3_42d382.jpg" alt="Cafe interior wall art" loading="lazy"></figure>
+    <figure><img src="images/room-3-2_15660e.jpg" alt="Dormitory room bed" loading="lazy"></figure>
+    <figure><img src="images/food-5_13e237.jpg" alt="Reception and cafe front desk" loading="lazy"></figure>
+    <figure><img src="images/hideout-start_a9facb.jpg" alt="Hide Out restaurant dining hall" loading="lazy"></figure>
+    <figure><img src="images/ouside-2_eb1739.jpg" alt="Courtyard Cafe signboard Paonta Sahib" loading="lazy"></figure>
+    <figure><img src="images/outside-front_ed8b6f.jpg" alt="Sainik Vishram Grih front view" loading="lazy"></figure>
+    <figure><img src="images/food-area-hideout_92d184.jpg" alt="Long dining table dormitory dining area" loading="lazy"></figure>
+    <figure><img src="images/room1_953659.jpg" alt="AC double room bed close view" loading="lazy"></figure>
+    <figure><img src="images/room-2_b7430d.jpg" alt="Premium AC room with sofa" loading="lazy"></figure>
+    <figure><img src="images/room-3_32953c.jpg" alt="Dormitory bed with green curtains" loading="lazy"></figure>
   </div>
 </section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+  <img src="" alt="" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+</div>
 
 <section id="location">
   <div class="section-tag">Location</div>
   <h2>Kahan Hai Sainik Rest House?</h2>
   <div class="location-wrap">
-    <iframe src="https://www.google.com/maps?q=Sainik+Rest+House+Court+Road+Paonta+Sahib&output=embed" loading="lazy" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps?q=Sainik+Rest+House+Court+Road+Paonta+Sahib&output=embed" loading="lazy" allowfullscreen title="Sainik Rest House location map"></iframe>
     <div class="loc-details">
       <p><strong>Address:</strong> Court Road, Near SDM Office, Paonta Sahib, District Sirmour, Himachal Pradesh - 173025</p>
       <p><strong>Landmark:</strong> Sub Divisional Court ke bilkul paas, Main Bazar area</p>
@@ -396,6 +477,53 @@
 </footer>
 
 <a href="https://wa.me/917018765080" target="_blank" rel="noopener" class="whatsapp-float">💬 WhatsApp</a>
+
+<script>
+  // Mobile menu toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    menuOverlay.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  }
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuOverlay.classList.toggle('open', isOpen);
+    hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+  menuOverlay.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  // Lightbox gallery
+  const galleryImgs = Array.from(document.querySelectorAll('#galleryGrid img'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  let currentIndex = 0;
+
+  function openLightbox(i) {
+    currentIndex = i;
+    lightboxImg.src = galleryImgs[i].src;
+    lightboxImg.alt = galleryImgs[i].alt;
+    lightbox.classList.add('open');
+  }
+  function closeLightbox() { lightbox.classList.remove('open'); }
+  function showNext() { currentIndex = (currentIndex + 1) % galleryImgs.length; lightboxImg.src = galleryImgs[currentIndex].src; lightboxImg.alt = galleryImgs[currentIndex].alt; }
+  function showPrev() { currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length; lightboxImg.src = galleryImgs[currentIndex].src; lightboxImg.alt = galleryImgs[currentIndex].alt; }
+
+  galleryImgs.forEach((img, i) => img.parentElement.addEventListener('click', () => openLightbox(i)));
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxNext').addEventListener('click', showNext);
+  document.getElementById('lightboxPrev').addEventListener('click', showPrev);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+  });
+</script>
 
 </body>
 </html>
