@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sainikresthouse.vercel.app/sitemap.xml
